@@ -1,0 +1,117 @@
+body {
+  background-color: #F2F2F2;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #373737;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #7765DA;
+  border-color: #7765DA;
+  border-radius: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #5767D0;
+}
+
+.poll-option {
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background-size: 200% 100%;
+  color: #373737;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.poll-option.active {
+  color: rgb(255, 255, 255);
+  border-color: #7765DA;
+}
+
+.poll-option::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background-color: #4F0DCE;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.poll-option:hover::after {
+  width: 100%;
+}
+
+.badge {
+  font-size: 0.8rem;
+}
+
+.participants-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.list-group-item {
+  border: none;
+  padding: 10px;
+}
+
+.row .col-12 {
+  padding: 0 5px;
+}
+
+
+
+.participants-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.overlay-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+}
